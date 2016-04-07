@@ -3,12 +3,12 @@
 调用方法
 
 WHSelectedDateView *view = [[WHSelectedDateView alloc] init];
-    view.frame = CGRectMake(0, self.view.bounds.size.height-240, self.view.bounds.size.width, 240);
-    //view.dateLimitNum = 0;
-    view.hoursType = UIHoursTypeWork;
-    view.minutesType = UIMinutesTypeAll;
-    view.delegate = self;
-    //view.titleString = @"测试";
+view.frame = CGRectMake(0, self.view.bounds.size.height-240, self.view.bounds.size.width, 240);
+//view.dateLimitNum = 0;
+view.hoursType = UIHoursTypeWork;
+view.minutesType = UIMinutesTypeAll;
+view.delegate = self;
+//view.titleString = @"测试";
     
     [view showView];
     
