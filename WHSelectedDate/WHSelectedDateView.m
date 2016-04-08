@@ -483,6 +483,13 @@
         [self is18EndWorkToChangePickerMinute];
         
     }else{
+        //如果下标大于新的_pickerHour的数量，需要将_hourStr做修改
+        if (index >= _pickerHour.count) {
+            _hourStr = [_pickerHour lastObject];
+        }else{
+            _hourStr = _pickerHour[index];
+        }
+        
         //如果选择的小时数为当前小时数，才删除，否则还原
         if ([self judgeSeledtedHourIsNowHour]) {
             
